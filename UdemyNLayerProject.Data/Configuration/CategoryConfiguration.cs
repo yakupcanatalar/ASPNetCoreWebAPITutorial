@@ -14,6 +14,7 @@ namespace UdemyNLayerProject.Data.Configuration
             builder.HasKey(_ => _.Id);
             builder.Property(_ => _.Id).UseIdentityColumn();
             builder.Property(_ => _.Name).IsRequired().HasMaxLength(50);
+            //Tablo isimleri için gerekli
             builder.ToTable("Categories");
 
 
