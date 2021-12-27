@@ -1,10 +1,10 @@
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Core.deps.json
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Core.dll
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Core.pdb
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.csproj.AssemblyReference.cache
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.AssemblyInfoInputs.cache
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.AssemblyInfo.cs
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.csproj.CoreCompileInputs.cache
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.dll
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.pdb
-D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Core\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Core.csproj.AssemblyReference.cache

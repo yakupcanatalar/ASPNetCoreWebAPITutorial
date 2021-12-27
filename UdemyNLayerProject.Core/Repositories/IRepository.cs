@@ -12,7 +12,7 @@ namespace UdemyNLayerProject.Core.Repositories
         //Tüm modeller için oluşturulmuştur.
         Task<TEntity> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsync(int id);
-        Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
+        IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);
         //Fİnd için bir expression almayı sağlar.catefory.sod(_=_.name="kalem") gibi.
         Task <TEntity>SingleOrDefault(Expression<Func<TEntity, bool>> predicate);
         Task AddAsync(TEntity entity);
