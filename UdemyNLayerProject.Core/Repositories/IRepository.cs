@@ -10,16 +10,24 @@ namespace UdemyNLayerProject.Core.Repositories
     {
 
         //Tüm modeller için oluşturulmuştur.
-        Task<TEntity> GetByIdAsync(int id);
-        Task<IEnumerable<TEntity>> GetAllAsync(int id);
-        IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);
         //Fİnd için bir expression almayı sağlar.catefory.sod(_=_.name="kalem") gibi.
-        Task <TEntity>SingleOrDefault(Expression<Func<TEntity, bool>> predicate);
-        Task AddAsync(TEntity entity);
-        Task AddRangeAsync(IEnumerable<TEntity> entities);
-        void Remove(TEntity entity);
-        void RemoveRangeAsync(IEnumerable<TEntity> entities);
-        TEntity Update(TEntity entity);
 
+        Task<TEntity> GetByIdAsync(int id);
+
+        Task<IEnumerable<TEntity>> GetAllAsync();
+
+        Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate);
+
+        Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
+
+        Task AddAsync(TEntity entity);
+
+        Task AddRangeAsync(IEnumerable<TEntity> entities);
+
+        void Remove(TEntity entity);
+
+        void RemoveRange(IEnumerable<TEntity> entities);
+
+        TEntity Update(TEntity entity);
     }
 }

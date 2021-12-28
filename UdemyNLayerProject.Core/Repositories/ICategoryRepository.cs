@@ -5,6 +5,6 @@ namespace UdemyNLayerProject.Core.Repositories
 {
     public interface ICategoryRepository :IRepository<Category>
     {
-        Task<Category> GetWithProductsByIdAsync(int categotyId);
+        Task<Category> GetWithProductsByIdAsync(int categoryId);
     }
 }

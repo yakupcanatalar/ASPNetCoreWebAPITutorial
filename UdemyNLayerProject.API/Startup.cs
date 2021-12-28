@@ -10,9 +10,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UdemyNLayerProject.Core.Repositories;
+using UdemyNLayerProject.Core.Services;
 using UdemyNLayerProject.Core.UnitOfWork;
 using UdemyNLayerProject.Data;
+using UdemyNLayerProject.Data.Repositories;
 using UdemyNLayerProject.Data.UnitOfWorks;
+using UdemyNLayerProject.Service.Services;
 
 namespace UdemyNLayerProject.API
 {
@@ -29,6 +33,12 @@ namespace UdemyNLayerProject.API
         //ConfigureServices Servislerimizi eklediðimiz method
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddAutoMapper(typeof(Startup));
+
             //Baðlantýyý burada ekledik.
             services.AddDbContext<AppDbContext>(options =>
             {

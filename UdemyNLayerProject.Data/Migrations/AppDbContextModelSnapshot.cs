@@ -54,6 +54,28 @@ namespace UdemyNLayerProject.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("UdemyNLayerProject.Core.Models.Person", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("SurName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Person");
+                });
+
             modelBuilder.Entity("UdemyNLayerProject.Core.Models.Product", b =>
                 {
                     b.Property<int>("Id")

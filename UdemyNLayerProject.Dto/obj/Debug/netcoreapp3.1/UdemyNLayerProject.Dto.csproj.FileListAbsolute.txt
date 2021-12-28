@@ -1,0 +1,13 @@
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.deps.json
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.dll
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.pdb
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Core.dll
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\bin\Debug\netcoreapp3.1\UdemyNLayerProject.Core.pdb
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.csproj.AssemblyReference.cache
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.AssemblyInfoInputs.cache
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.AssemblyInfo.cs
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.csproj.CoreCompileInputs.cache
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.csproj.CopyComplete
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.dll
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.Dto\obj\Debug\netcoreapp3.1\UdemyNLayerProject.Dto.pdb

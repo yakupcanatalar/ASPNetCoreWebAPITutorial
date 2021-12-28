@@ -6,6 +6,8 @@ D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\UdemyN
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\UdemyNLayerProject.API.runtimeconfig.dev.json
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\UdemyNLayerProject.API.dll
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\UdemyNLayerProject.API.pdb
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\.Net\UdemyNLayerProject\UdemyNLayerProject.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll

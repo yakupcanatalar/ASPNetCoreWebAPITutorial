@@ -13,17 +13,15 @@ namespace UdemyNLayerProject.Data.Repositories
         protected readonly DbContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
-        //Generic bir class tüm repolar için kullanılabilinir.
-        public Repository(DbContext context)
+        public Repository(AppDbContext context)
         {
             _context = context;
             _dbSet = context.Set<TEntity>();
         }
+
         public async Task AddAsync(TEntity entity)
         {
             await _dbSet.AddAsync(entity);
-            //Await bu satırdaki işlemler bitene kadar burada bekler
-            //Task void demektedir.
         }
 
         public async Task AddRangeAsync(IEnumerable<TEntity> entities)
@@ -31,12 +29,12 @@ namespace UdemyNLayerProject.Data.Repositories
             await _dbSet.AddRangeAsync(entities);
         }
 
-        public  IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
+        public async Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbSet.Where(predicate);
+            return await _dbSet.Where(predicate).ToListAsync();
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync(int id)
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();
         }
@@ -51,19 +49,20 @@ namespace UdemyNLayerProject.Data.Repositories
             _dbSet.Remove(entity);
         }
 
-        public void RemoveRangeAsync(IEnumerable<TEntity> entities)
+        public void RemoveRange(IEnumerable<TEntity> entities)
         {
             _dbSet.RemoveRange(entities);
         }
 
-        public async Task<TEntity> SingleOrDefault(Expression<Func<TEntity, bool>> predicate)
+        public async Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
         {
             return await _dbSet.SingleOrDefaultAsync(predicate);
         }
 
         public TEntity Update(TEntity entity)
         {
-            _dbSet.Update(entity);
+            _context.Entry(entity).State = EntityState.Modified;
+
             return entity;
         }
     }

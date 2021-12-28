@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNLayerProject.API", "UdemyNLayerProject.API.csproj", "{13E6AFD0-5C4D-49BA-BBB2-954A307681F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNLayerProject.API", "UdemyNLayerProject.API.csproj", "{13E6AFD0-5C4D-49BA-BBB2-954A307681F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNLayerProject.Core", "..\UdemyNLayerProject.Core\UdemyNLayerProject.Core.csproj", "{C79A9D60-F6CA-4CD5-BD4A-2C7713F52EC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNLayerProject.Core", "..\UdemyNLayerProject.Core\UdemyNLayerProject.Core.csproj", "{C79A9D60-F6CA-4CD5-BD4A-2C7713F52EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNLayerProject.Data", "..\UdemyNLayerProject.Data\UdemyNLayerProject.Data.csproj", "{D42965B5-5FF7-4BDA-A4E9-0844F64A7005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNLayerProject.Data", "..\UdemyNLayerProject.Data\UdemyNLayerProject.Data.csproj", "{D42965B5-5FF7-4BDA-A4E9-0844F64A7005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNLayerProject.Service", "..\UdemyNLayerProject.Service\UdemyNLayerProject.Service.csproj", "{6BCE72B0-5A91-4547-BF2C-35CB57407441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNLayerProject.Service", "..\UdemyNLayerProject.Service\UdemyNLayerProject.Service.csproj", "{6BCE72B0-5A91-4547-BF2C-35CB57407441}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
