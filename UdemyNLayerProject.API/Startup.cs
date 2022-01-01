@@ -1,15 +1,14 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using UdemyNLayerProject.API.Extentions;
+using UdemyNLayerProject.API.Filters;
 using UdemyNLayerProject.Core.Repositories;
 using UdemyNLayerProject.Core.Services;
 using UdemyNLayerProject.Core.UnitOfWork;
@@ -38,7 +37,8 @@ namespace UdemyNLayerProject.API
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddAutoMapper(typeof(Startup));
-
+            //Not Found DI olduðu için burada eklemeliyiz.
+            services.AddScoped<ProdcutNotFoundFilter>();
             //Baðlantýyý burada ekledik.
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -47,7 +47,19 @@ namespace UdemyNLayerProject.API
             });
             //Unit of work patternini eklemek için.Bir servis olarak ekledik.
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddControllers();
+            //Tüm kontrollerda bu validasyon kullanýlýr hale geldi.
+            // [ValidationFilter] yapmamýza gerke yok tüm endpointler için
+            services.AddControllers( o=>
+            {
+                o.Filters.Add(new ValidationFilter());
+            });
+            
+            //Validasyonlarý kendim kontrol edeceðim anlamýna geliyor.Default false.
+            services.Configure<ApiBehaviorOptions>(options =>
+           {
+               options.SuppressModelStateInvalidFilter = true;
+           });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +72,7 @@ namespace UdemyNLayerProject.API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseExceptionHandler();//Custom yazdýðýmýz extention methodu burada ekledik.
             app.UseRouting();
 
             app.UseAuthorization();
@@ -68,6 +81,7 @@ namespace UdemyNLayerProject.API
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
