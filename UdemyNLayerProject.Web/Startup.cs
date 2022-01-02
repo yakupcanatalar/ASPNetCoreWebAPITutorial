@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using UdemyNLayerProject.Core.Repositories;
 using UdemyNLayerProject.Core.Services;
 using UdemyNLayerProject.Core.UnitOfWork;
@@ -11,6 +12,7 @@ using UdemyNLayerProject.Data;
 using UdemyNLayerProject.Data.Repositories;
 using UdemyNLayerProject.Data.UnitOfWorks;
 using UdemyNLayerProject.Service.Services;
+using UdemyNLayerProject.Web.ApiService;
 using UdemyNLayerProject.Web.Filters;
 
 namespace UdemyNLayerProject.Web
@@ -28,6 +30,10 @@ namespace UdemyNLayerProject.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
+            services.AddHttpClient<CategotryApiService>( opt=>
+            {
+                opt.BaseAddress = new Uri(Configuration["baseUrl"]);
+            });
             services.AddScoped<NotFoundFilter>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));

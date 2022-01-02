@@ -72,7 +72,7 @@ namespace UdemyNLayerProject.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseExceptionHandler();//Custom yazdýðýmýz extention methodu burada ekledik.
+            //app.UseExceptionHandler();//Custom yazdýðýmýz extention methodu burada ekledik.
             app.UseRouting();
 
             app.UseAuthorization();
