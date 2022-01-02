@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNLayerProject.Data", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNLayerProject.Service", "..\UdemyNLayerProject.Service\UdemyNLayerProject.Service.csproj", "{6BCE72B0-5A91-4547-BF2C-35CB57407441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNLayerProject.Web", "..\UdemyNLayerProject.Web\UdemyNLayerProject.Web.csproj", "{198E6EF5-BE3D-438E-8D9F-FE46568B2DE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6BCE72B0-5A91-4547-BF2C-35CB57407441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BCE72B0-5A91-4547-BF2C-35CB57407441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BCE72B0-5A91-4547-BF2C-35CB57407441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198E6EF5-BE3D-438E-8D9F-FE46568B2DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198E6EF5-BE3D-438E-8D9F-FE46568B2DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198E6EF5-BE3D-438E-8D9F-FE46568B2DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198E6EF5-BE3D-438E-8D9F-FE46568B2DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
